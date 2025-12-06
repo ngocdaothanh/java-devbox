@@ -42,7 +42,8 @@ JRE is a software package containing:
 ## Typical developement worlflow
 
 * Use text editor or IDE to write your Java program in `.java` files.
-* Use Java compiler (in JDK) to compile `.java` files to `.class` files.
+* Use Java compiler (in JDK) to compile `.java` files to `.class` files:
+  `javac <.java file>`
 * Use JVM (in JDK or JRE) to run your `.class` files.
 
 ## Popular versions of Java in 2025
