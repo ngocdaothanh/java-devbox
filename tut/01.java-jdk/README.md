@@ -39,6 +39,10 @@ JRE is a software package containing:
 * JRE: for users to run compiled Java programs
 * JDK is bigger than JRE
 
+In short:
+* JRE = JVM (`java`) + Java standard libraries
+* JDK = JRE + Java compiler (`javac`)
+
 ## Typical development worlflow
 
 * Use text editor or IDE to write your Java program in `.java` files.
