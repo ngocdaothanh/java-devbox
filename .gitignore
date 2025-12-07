@@ -1,1 +1,4 @@
 *.class
+
+# MacOS
+.DS_Store
