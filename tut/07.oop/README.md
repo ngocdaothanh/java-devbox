@@ -5,6 +5,7 @@
 Abstraction is the most important principle.
 
 "Program to interfaces, not to concrete classes."
+=> "Program to abstraction, not to concrete implementations."
 
 The purpose is to create the structure/skeleton of the program.
 

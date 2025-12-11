@@ -54,8 +54,8 @@ class Dog extends NamedAnimal {
 public class Animals {
     public static void main(String[] args) {
         // We can only create "new" instances from concrete classes
-        Animal a1 = new Cat("Kitty");
-        Animal a2 = new Dog("Pluto");
+        Animal a1 = new Cat("Kitty"); // Cat a1 = new Cat("Kitty");
+        Animal a2 = new Dog("Pluto"); // Dog a2 = new Dog("Pluto");
 
         List<Animal> animals = new ArrayList<>();
         animals.add(a1);
