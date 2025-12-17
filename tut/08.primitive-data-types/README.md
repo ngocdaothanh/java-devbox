@@ -26,7 +26,7 @@ There are no unsigned number data types like in C/C++.
 
 ## Character
 
-`char`: 2 bytes, for Unicode characters;
+`char`: 2 bytes, for Unicode UTF-16 characters;
  unlike 1 byte `char` type for both numbers and characters in C/C++!
 
 Must use single quotes for 1 character.
