@@ -2,7 +2,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class ReadBinaryFile {
+public class ReadTextFile {
     public static void main(String[] args) throws Exception {
         loadWholeFile();
     }
@@ -11,12 +11,8 @@ public class ReadBinaryFile {
         Path filePath = Paths.get("abc.txt");
         byte[] bytes = Files.readAllBytes(filePath);
 
-        for (byte b : bytes) {
-            // In Java, all numbers are signed.
-            // Convert byte to int so that the result is in range 0-255.
-            int unsignedByte = b & 0xFF;
-            System.out.println(unsignedByte);
-        }
+        String text = new String(bytes, "UTF-8");
+        System.out.println(text);
     }
 
     private static void loadFileInStream() throws Exception {

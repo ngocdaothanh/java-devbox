@@ -9,15 +9,17 @@ the implementations of JVMs.
 
 ## Integer number types
 
-* `byte`
+All numbers are **signed**.
+There are no unsigned number data types like in C/C++.
+
+* `byte`: 1 byte, for numbers, from -2^7 to 2^7 minus 1 (-128 to 127)
 * `short`
 * `int`
 * `long`
 
-All numbers are **signed**.
-There are no unsigned number data types like in C/C++.
-
-`byte`: 1 byte, for numbers
+Note:
+- 8 bits unsigned number: from 0 to 2^8 minus 1 (255)
+- 8 bits signed number: -2^7 to 2^7 minus 1
 
 ## Floating-point types
 
