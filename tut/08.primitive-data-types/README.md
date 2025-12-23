@@ -43,3 +43,16 @@ because there are no methods associated with primitive types.
 
 With an object type like `String`, we can call:
 `objectType.someMethod()`
+
+## Box types
+
+A box class type is a class that wraps the equivalent primitive type.
+
+* `boolean`: `Boolean`
+* `byte`: `Byte`
+* `short`: `Short`
+* `int`: `Integer`
+* `long`: `Long`
+* `float`: `Float`
+* `double`: `Double`
+* `char`: `Character`
