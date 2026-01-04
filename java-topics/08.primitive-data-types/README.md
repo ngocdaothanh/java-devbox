@@ -44,6 +44,16 @@ because there are no methods associated with primitive types.
 With an object type like `String`, we can call:
 `objectType.someMethod()`
 
+## String
+
+Strings in Java are immutable (like in most languages).
+To modify strings, you need to use `StringBuilder`.
+
+How to use `StringBuilder` to create `String`:
+- Create `StringBuilder`.
+- Add/modify content.
+- Lastly, convert `StringBuilder` to `String` for use.
+
 ## Box types
 
 A box class type is a class that wraps the equivalent primitive type.
