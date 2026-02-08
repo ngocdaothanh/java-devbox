@@ -12,3 +12,11 @@ Usually we do not need to catch `Error` as they are not recoverable (the program
 ## `try`, `catch`, `finally`
 
 todo
+
+## Custom exception class
+
+Usually the name of the class should be clear enough and we will not need to add a custom exception message.
+
+```java
+class NegativeNumberGivenException extends RuntimeException {}
+```
