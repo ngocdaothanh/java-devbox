@@ -2,7 +2,7 @@ package dsa;
 
 public class Combinations {
     public static void main(String[] args) {
-        printPairs(5);
+        printPairs(4);
     }
 
     /**
