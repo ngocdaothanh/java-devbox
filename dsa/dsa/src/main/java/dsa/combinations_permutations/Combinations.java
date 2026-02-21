@@ -1,4 +1,4 @@
-package dsa;
+package dsa.combinations_permutations;
 
 public class Combinations {
     public static void main(String[] args) {
