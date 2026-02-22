@@ -1,35 +1,28 @@
 package dsa.recursion;
 
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class ExponentialTest {
     @Test
-    void correct() throws Exponential.NegativeNumberExponentialGiven {
+    void correct() {
         Exponential instance = new Exponential();
-
-        assertEquals(27, instance.f(3, 3));
+        assertEquals(27, instance.exponential(3, 3));
     }
 
     @Test
-    void incorrect() throws Exponential.NegativeNumberExponentialGiven {
+    void exponentialOf0ShouldBe1() {
         Exponential instance = new Exponential();
-
-        assertEquals(1, instance.f(20, 3));
+        assertEquals(1, instance.exponential(0, 0));
     }
 
     @Test
-    void zeroInstance() throws Exponential.NegativeNumberExponentialGiven {
+    void negativeExponentialShouldThrowException() {
         Exponential instance = new Exponential();
-
-        assertEquals(1, instance.f(999, 0));
-    }
-
-    @Test
-    void negativeNum() throws Exponential.NegativeNumberExponentialGiven {
-        Exponential instance = new Exponential();
-
-        assertEquals(625, instance.f(-5, 4));
+        assertThrows(
+                Exponential.NegativeNumberExponentialGiven.class,
+                () -> instance.exponential(5, -5)
+        );
     }
 }

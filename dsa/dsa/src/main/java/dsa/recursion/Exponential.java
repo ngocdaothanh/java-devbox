@@ -1,9 +1,9 @@
 package dsa.recursion;
 
 public class Exponential {
-    static class NegativeNumberExponentialGiven extends Throwable {}
+    static class NegativeNumberExponentialGiven extends RuntimeException {}
 
-    int f(int base, int exp) throws NegativeNumberExponentialGiven {
+    int exponential(int base, int exp) throws NegativeNumberExponentialGiven {
         if (exp < 0) {
             throw new NegativeNumberExponentialGiven();
         }
@@ -18,6 +18,6 @@ public class Exponential {
             return base;
         }
 
-        return base * f(base, exp - 1);
+        return base * exponential(base, exp - 1);
     }
 }
