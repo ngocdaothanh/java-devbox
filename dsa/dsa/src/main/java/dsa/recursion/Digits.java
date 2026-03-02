@@ -2,12 +2,12 @@ package dsa.recursion;
 
 public class Digits {
     static class DigitsInternal {
-        public int countDigitsInternal(int n, int placeValue) {
+        private int countDigits(int n, int placeValue) {
             if (n < 1) {
                 return placeValue;
             }
 
-            return countDigitsInternal(n / 10, placeValue + 1);
+            return countDigits(n / 10, placeValue + 1);
         }
     }
 
@@ -19,7 +19,7 @@ public class Digits {
             return 1;
         }
 
-        return instance.countDigitsInternal(n, placeValue);
+        return instance.countDigits(n, placeValue);
     }
 }
 
