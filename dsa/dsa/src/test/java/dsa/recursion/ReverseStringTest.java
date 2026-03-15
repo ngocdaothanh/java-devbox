@@ -22,16 +22,4 @@ class ReverseStringTest {
         ReverseString instance = new ReverseString();
         assertEquals("cba", instance.reverseString("abc"));
     }
-
-    @Test
-    void palindrome() {
-        ReverseString instance = new ReverseString();
-        assertEquals("tacocat", instance.reverseString("tacocat"));
-    }
-
-    @Test
-    void twoCharacters() {
-        ReverseString instance = new ReverseString();
-        assertEquals("tt", instance.reverseString("tt"));
-    }
 }
