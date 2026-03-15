@@ -6,10 +6,11 @@ public class Palindrome {
             return true;
         }
 
-        return palindrome(s, 0, s.length() - 1);
+        //return palindromeKeepingTheOriginalString(s, 0, s.length() - 1);
+        return palindromeBuildingSmallerString(s);
     }
 
-    private boolean palindrome(String s, int left, int right) {
+    private boolean palindromeKeepingTheOriginalString(String s, int left, int right) {
         if (left >= right) {
             return true;
         }
@@ -18,6 +19,21 @@ public class Palindrome {
             return false;
         }
 
-        return palindrome(s, left + 1, right - 1);
+        return palindromeKeepingTheOriginalString(s, left + 1, right - 1);
+    }
+
+    private boolean palindromeBuildingSmallerString(String s) {
+        if (s.isEmpty() || s.length() == 1) {
+            return true;
+        }
+
+        char fistChar = s.charAt(0);
+        char lastChar = s.charAt(s.length() - 1);
+        if (fistChar != lastChar) {
+            return false;
+        }
+
+        String smallerString = s.substring(1, s.length() - 1);
+        return palindromeBuildingSmallerString(smallerString);
     }
 }
