@@ -2,18 +2,16 @@ package dsa.recursion;
 
 public class Fibonacci {
     public int fibonacci(int n) {
-        return fibonacci(n, 0, 0, 1, 0);
+        if (n < 0) {
+            throw new IllegalArgumentException("n must not be negative");
+        }
+        return fibonacci(n, 0, 1);
     }
 
-    private int fibonacci(int n, int c, int a, int b, int count) {
-        if (n <= 1) {
-            return n;
+    private int fibonacci(int n, int current, int next) {
+        if (n == 0) {
+            return current;
         }
-
-        if (count >= n) {
-            return b + a;
-        }
-
-        return fibonacci(n, b + a, b, c, count + 1);
+        return fibonacci(n - 1, next, current + next);
     }
 }

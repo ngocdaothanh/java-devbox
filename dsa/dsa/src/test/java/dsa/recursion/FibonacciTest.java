@@ -6,8 +6,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class FibonacciTest {
     @Test
-    void largerThanAFib() {
+    void returnsTenthFibonacciNumber() {
         Fibonacci instance = new Fibonacci();
-        assertEquals(616, instance.fibonacci(10));
+        assertEquals(55, instance.fibonacci(10));
     }
 }
