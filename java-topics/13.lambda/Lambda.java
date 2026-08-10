@@ -46,7 +46,7 @@ public class Lambda {
             .filter(n -> {
                 System.out.println(n);
                 return n > 2;
-            })
+            });
             // Consume the stream
             // .forEach(System.out::println);
     }
